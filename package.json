@@ -1,0 +1,25 @@
+{
+  "name": "mern_chat_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/govardhanshah456/MERN_Chat_App.git"
+  },
+  "author": "Ansh Shah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/govardhanshah456/MERN_Chat_App/issues"
+  },
+  "homepage": "https://github.com/govardhanshah456/MERN_Chat_App#readme",
+  "dependencies": {
+    "dotenv": "^11.0.0",
+    "express": "^4.17.2",
+    "install": "^0.13.0",
+    "nodemon": "^2.0.15"
+  }
+}
