@@ -4,6 +4,7 @@ const chats = require("./dummyData");
 const { connect } = require("mongoose");
 const ConnectDB = require("./config/db");
 const userRoute = require("./routes/userRoute");
+const chatRoutes= require("./routes/chatRoutes");
 const {
   notFound,
   errorHandler,
@@ -17,9 +18,7 @@ const Port = process.env.PORT ? process.env.PORT : 5000;
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
-app.get("/api/chat", (req, res) => {
-  res.send(chats);
-});
+app.use("/api/chat", chatRoutes);
 app.use("/api/user", userRoute);
 app.use(notFound);
 app.use(errorHandler);
